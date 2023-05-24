@@ -1,0 +1,24 @@
+$base-color: #c6538c;
+$border-dark: rgba($base-color, 0.88);
+
+:root {
+  --base-color: #c6538c;
+  --border-dark: rgba(198, 83, 140, 0.88);
+  /* Putem folosi variabilele SCSS, scriind
+    --border-dark: #{darken(#c6538c, 88%)};
+  */
+}
+
+.alert {
+  height: 300px;
+  width: 400px;
+  background: $base-color; // Avantajul fata de CSS e ca putem aplica functii, de ex. lighten($base-color, 10%)
+  border: 1px solid $border-dark;
+}
+
+.message {
+  height: 300px;
+  width: 400px;
+  background: var(--base-color);
+  border: 1px solid var(--border-dark);
+}

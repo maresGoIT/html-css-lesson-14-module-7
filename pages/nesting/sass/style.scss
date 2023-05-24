@@ -1,0 +1,47 @@
+/* Meniu CSS */
+.menu-css ul {
+  background: lightblue;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+.menu-css ul li a {
+  transition: color 200ms ease-in-out, border 200ms ease-in-out,
+    background-color 200ms ease-in-out;
+  color: royalblue;
+  border: 1px solid transparent;
+  text-decoration: none;
+  padding: 8px;
+}
+
+.menu-css ul li a:hover,
+.menu-css ul li a:focus {
+  background: royalblue;
+  color: white;
+  border-color: blue;
+}
+
+/* Meniu SCSS */
+.menu-scss ul {
+  background: lightblue;
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+
+  li a {
+    transition: color 200ms ease-in-out, border 200ms ease-in-out,
+      background-color 200ms ease-in-out;
+    color: royalblue;
+    border: 1px solid transparent;
+    text-decoration: none;
+    padding: 8px;
+
+    &:hover,
+    &:focus {
+      background: royalblue;
+      color: white;
+      border-color: blue;
+    }
+  }
+}

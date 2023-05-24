@@ -1,0 +1,38 @@
+.button {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+  background-color: lightblue;
+
+  &:hover,
+  &:focus {
+    background-color: darken(lightblue, 15%);
+  }
+
+  &--report {
+    @extend .button;
+    background-color: lightcoral;
+    &:hover,
+    &:focus {
+      background-color: darken(lightcoral, 5%);
+    }
+  }
+
+  &--submit {
+    @extend .button;
+    background-color: green;
+    color: white;
+    &:hover,
+    &:focus {
+      background-color: darken(green, 5%);
+    }
+  }
+}
+
+.control-group {
+  display: flex;
+  gap: 16px;
+}

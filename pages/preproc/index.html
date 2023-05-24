@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../styles/main.css" />
+    <link rel="stylesheet" href="../../css/main.min.css" />
 
     <title>HTML/CSS Modulul 7 - Lectia 14</title>
     <style></style>
@@ -24,7 +24,8 @@
           browserere, el va trebui transforamt in CSS inainte.
         </p>
       </article>
-      <note>
+      <div class="note">
+        <p></p>
         In VSCode, pot sa instalez extensia
         <a
           href="https://marketplace.visualstudio.com/items?itemName=glenn2223.live-sass"
@@ -33,8 +34,24 @@
         </a>
         , care apoi imi genereaza automat fisierul css pe care il adaug in
         pagina mea HTML.
-      </note>
-      <section class="lesson-example mt-lg"></section>
+        <p>
+          Pentru configurari,
+          <span class="strong">
+            File -> Preferences -> Caut "Live Sass Compiler" -> Edit in
+            settings.json, si adaug:
+          </span>
+        </p>
+        <code>
+          <!-- prettier-ignore -->
+          "liveSassCompile.settings.formats": [
+          {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~../css/"
+          }
+        ],
+        </code>
+      </div>
     </main>
   </body>
 </html>
