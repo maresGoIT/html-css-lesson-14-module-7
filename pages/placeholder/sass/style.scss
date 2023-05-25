@@ -12,15 +12,6 @@
     background-color: darken(lightblue, 15%);
   }
 
-  &--report {
-    @extend .button;
-    background-color: lightcoral;
-    &:hover,
-    &:focus {
-      background-color: darken(lightcoral, 5%);
-    }
-  }
-
   &--submit {
     @extend .button;
     background-color: green;
@@ -29,6 +20,15 @@
     &:focus {
       background-color: darken(green, 5%);
     }
+  }
+}
+
+.button--report {
+  @extend .button;
+  background-color: lightcoral;
+  &:hover,
+  &:focus {
+    background-color: darken(lightcoral, 5%);
   }
 }
 
